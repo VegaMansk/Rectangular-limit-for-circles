@@ -5,60 +5,59 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-        <!-- everything you already have -->
-
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"        >
+        android:layout_height="match_parent">
 
         <ImageView
-            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
             android:src="@drawable/cirkels2"/>
 
         <TextView
-            android:background="@drawable/circular_hired"
-            android:paddingLeft="16dp"
-            android:textColor="@android:color/background_dark"
-            android:fontFamily="casual"
-            android:textSize="34sp"
-            android:textStyle="bold"
             android:id="@+id/Warning_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Warning" />
+            android:background="@drawable/circular_hired"
+            android:fontFamily="casual"
+            android:paddingLeft="@dimen/left_margin_text"
+            android:text="@string/Warning"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/SizeOfCapital"
+            android:textStyle="bold" />
 
         <TextView
-            android:background="@drawable/circular_hired"
-            android:paddingLeft="16dp"
-            android:textColor="@android:color/background_dark"
-            android:fontFamily="casual"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_below="@id/Warning_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Limit" />
-        <TextView
+            android:layout_below="@id/Warning_textView"
             android:background="@drawable/circular_hired"
-            android:padding="20dp"
-            android:textColor="@android:color/background_dark"
             android:fontFamily="casual"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:paddingLeft="@dimen/left_margin_text"
+            android:text="@string/Limit"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/SizeOfText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="@string/Maurits" />
+            android:background="@drawable/circular_hired"
+            android:fontFamily="casual"
+            android:paddingLeft="@dimen/left_margin_text"
+            android:text="@string/Maurits"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/SizeOfText"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
-
-
 
 </ScrollView>
 
